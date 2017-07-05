@@ -18,9 +18,12 @@
 		2336252C1EFE03F70012AF39 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233625261EFE03780012AF39 /* ProgressBar.swift */; };
 		2336252D1EFE03F70012AF39 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233625271EFE03780012AF39 /* ResultsTableViewController.swift */; };
 		2336252E1EFE03F70012AF39 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233625231EFE03780012AF39 /* ResultTableViewCell.swift */; };
-		233625411EFEE4BF0012AF39 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 233625401EFEE4970012AF39 /* Inceptionv3.mlmodel */; };
-		233625441EFEE4F80012AF39 /* VGG16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 233625431EFEE4EE0012AF39 /* VGG16.mlmodel */; };
 		233625481EFEE6260012AF39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233625461EFEE5E80012AF39 /* Main.storyboard */; };
+		237E650A1EFF4ABF00F78A65 /* cat.jpg in Sources */ = {isa = PBXBuildFile; fileRef = 237E65091EFF4AB100F78A65 /* cat.jpg */; };
+		237E650B1EFF4B3B00F78A65 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 237E65091EFF4AB100F78A65 /* cat.jpg */; };
+		237E650E1EFF648F00F78A65 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 237E650C1EFF644400F78A65 /* dog.jpg */; };
+		237E65101EFF79A100F78A65 /* TinyYOLO.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 237E650F1EFF798C00F78A65 /* TinyYOLO.mlmodel */; };
+		237E65121EFF813600F78A65 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E65111EFF813600F78A65 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +61,11 @@
 		233625271EFE03780012AF39 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
 		233625281EFE03CD0012AF39 /* PulleyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulleyViewController.swift; sourceTree = "<group>"; };
 		233625291EFE03CD0012AF39 /* PulleyPassthroughScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulleyPassthroughScrollView.swift; sourceTree = "<group>"; };
-		233625401EFEE4970012AF39 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
-		233625431EFEE4EE0012AF39 /* VGG16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VGG16.mlmodel; sourceTree = "<group>"; };
 		233625471EFEE5E80012AF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		237E65091EFF4AB100F78A65 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		237E650C1EFF644400F78A65 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		237E650F1EFF798C00F78A65 /* TinyYOLO.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TinyYOLO.mlmodel; sourceTree = "<group>"; };
+		237E65111EFF813600F78A65 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +121,11 @@
 				233625271EFE03780012AF39 /* ResultsTableViewController.swift */,
 				233625231EFE03780012AF39 /* ResultTableViewCell.swift */,
 				233625201EFE008D0012AF39 /* CameraViewController.swift */,
-				233625401EFEE4970012AF39 /* Inceptionv3.mlmodel */,
+				237E65111EFF813600F78A65 /* Helpers.swift */,
+				237E65091EFF4AB100F78A65 /* cat.jpg */,
+				237E650C1EFF644400F78A65 /* dog.jpg */,
 				233625461EFEE5E80012AF39 /* Main.storyboard */,
-				233625431EFEE4EE0012AF39 /* VGG16.mlmodel */,
+				237E650F1EFF798C00F78A65 /* TinyYOLO.mlmodel */,
 				233182B21EFDC0A700757F8F /* Assets.xcassets */,
 				233182B41EFDC0A700757F8F /* LaunchScreen.storyboard */,
 				233182B71EFDC0A700757F8F /* Info.plist */,
@@ -258,6 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237E650E1EFF648F00F78A65 /* dog.jpg in Resources */,
+				237E650B1EFF4B3B00F78A65 /* cat.jpg in Resources */,
 				233625481EFEE6260012AF39 /* Main.storyboard in Resources */,
 				233182B61EFDC0A700757F8F /* LaunchScreen.storyboard in Resources */,
 				233182B31EFDC0A700757F8F /* Assets.xcassets in Resources */,
@@ -285,9 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233625441EFEE4F80012AF39 /* VGG16.mlmodel in Sources */,
-				233625411EFEE4BF0012AF39 /* Inceptionv3.mlmodel in Sources */,
+				237E65101EFF79A100F78A65 /* TinyYOLO.mlmodel in Sources */,
+				237E650A1EFF4ABF00F78A65 /* cat.jpg in Sources */,
 				2336252A1EFE03F70012AF39 /* PulleyPassthroughScrollView.swift in Sources */,
+				237E65121EFF813600F78A65 /* Helpers.swift in Sources */,
 				2336252B1EFE03F70012AF39 /* PulleyViewController.swift in Sources */,
 				2336252C1EFE03F70012AF39 /* ProgressBar.swift in Sources */,
 				2336252D1EFE03F70012AF39 /* ResultsTableViewController.swift in Sources */,
